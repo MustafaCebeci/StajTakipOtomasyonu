@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    background-color: #1aa7ec;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* navbar */
+#nav{
+    flex: 1;
+    display: flex;
+    background-color: #1e2f97;
+}
+
+#logo{
+    flex: 2;
+    text-align: center;
+}
+
+#logo img{
+    margin: 1rem;
+    width: 10rem;
+    height: auto;
+}
+
+#navbar{
+    flex: 6;
+}
+#navbar{
+    align-self: center;
+    text-align: end;
+}
+
+#navbar ul{
+    list-style-type: none;
+}
+
+li{
+    color: #EEEBD3;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 2rem;
+}
+li:hover{
+    background-color: #16216c;
+}
+
+/* Container */
+#container{
+    flex: 3;
+    display: flex;
+}
+
+    /* Profile */
+#login_type{
+    flex: 1;
+}
+    /* Form */
+#login_form{
+    flex: 3;
+}
