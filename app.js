@@ -6,6 +6,7 @@ const port = 3000;
 
 const routes = require(path.join(__dirname,"./routes/route.js"));
 
+app.use(express.static(path.join(__dirname,"./public")))
 app.use(express.json());
 app.use(routes);
 

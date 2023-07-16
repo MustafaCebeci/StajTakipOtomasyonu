@@ -54,8 +54,40 @@ li:hover{
     /* Profile */
 #login_type{
     flex: 1;
+    position: relative;
+    margin-left: 1rem;
 }
     /* Form */
 #login_form{
     flex: 3;
+}
+.card{
+    position: relative;
+    margin: 4rem;
+}
+.card img{
+    width: auto;
+    height: 16rem;
+}
+#btn1,#btn2{
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    user-select: none;
+    transition: background-color 0.5s;
+}
+#btn1:hover,#btn2:hover{
+    background-color: rgba(25, 25, 25, 0.8);
+}
+#btn2 {
+    right: 0;
 }
