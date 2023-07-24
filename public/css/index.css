@@ -64,6 +64,11 @@ li:hover{
 .card{
     position: relative;
     margin: 4rem;
+    display: none;
+    justify-content: center;
+}
+.c_active{
+    display: flex;
 }
 .card img{
     width: auto;
@@ -90,4 +95,20 @@ li:hover{
 }
 #btn2 {
     right: 0;
+}
+#pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.page{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin: 0.25rem;
+    transition: background-color 0.5s;
+}
+.p_active, .page:hover{
+    background-color: rgb(64, 64, 64);
 }

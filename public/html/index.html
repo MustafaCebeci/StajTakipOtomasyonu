@@ -19,22 +19,28 @@
     </div>
     <div id="container">
         <div id="login_type">
-            <div class="card" id="c1" style="display: none;">
+            <div class="card c_active" id="c1">
                 <img src="../imgs/businessman.png" alt="Firma">
             </div>
-            <div class="card" id="c2" style="display: none;">
+            <div class="card" id="c2">
                 <img src="../imgs/teacher.png" alt="Okul">
             </div>
             <div class="card" id="c3">
                 <img src="../imgs/student.png" alt="Öğrenci">
             </div>
-            <button id="btn1"><i class="fas fa-angle-left"></i></button>
-            <button id="btn2"><i class="fas fa-angle-right"></i></button>
+            <div id="btn1"><i class="fas fa-angle-left" onclick="prew()"></i></div>
+            <div id="btn2"><i class="fas fa-angle-right" onclick="next()"></i></div>
+            <div id="pages">
+                <div class="page p_active" onclick="click_toggle(0)"></div>
+                <div class="page" onclick="click_toggle(1)"></div>
+                <div class="page" onclick="click_toggle(2)"></div>
+            </div>
         </div>
         <div id="login_form">
             
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../client/index.js"></script>
 </body>
 </html>
