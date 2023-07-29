@@ -28,8 +28,11 @@
             <div class="card" id="c3">
                 <img src="../imgs/student.png" alt="Öğrenci">
             </div>
-            <div id="btn1"><i class="fas fa-angle-left" onclick="prew()"></i></div>
-            <div id="btn2"><i class="fas fa-angle-right" onclick="next()"></i></div>
+            <div id="btn1" onclick="prew()"><i class="fas fa-angle-left"></i></div>
+            <div id="btn2" onclick="next()"><i class="fas fa-angle-right"></i></div>
+            <span id="bilgi">
+                    <span id="yontem">Firma</span>
+            </span>
             <div id="pages">
                 <div class="page p_active" onclick="click_toggle(0)"></div>
                 <div class="page" onclick="click_toggle(1)"></div>
@@ -37,8 +40,96 @@
             </div>
         </div>
         <div id="login_form">
-            
+            <div class="form f_active" id="firma">
+                <form action="/anasayfa/firma" method="post">
+                    <table>
+                        <tr>
+                            <td><label>Ad:</label></td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Soyad:</label></td>
+                            <td><input type="text" name="surname"></td>
+                        </tr>
+                        <tr>
+                            <td><label>TC Kimlik No:</label></td>
+                            <td><input type="text" name="tc"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Şifre:</label></td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Mail:</label></td>
+                            <td><input type="email" name="mail"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Giriş Yap"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="form" id="ogretmen">
+                <form action="/anasayfa/okul" method="post">
+                    <table>
+                        <tr>
+                            <td><label>Ad:</label></td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Soyad:</label></td>
+                            <td><input type="text" name="surname"></td>
+                        </tr>
+                        <tr>
+                            <td><label>TC Kimlik No:</label></td>
+                            <td><input type="text" name="tc"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Şifre:</label></td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Giriş Yap"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="form" id="ogrenci">
+                <form action="/anasayfa/ogrenci" method="post">
+                    <table>
+                        <tr>
+                            <td><label>Ad:</label></td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Soyad:</label></td>
+                            <td><input type="text" name="surname"></td>
+                        </tr>
+                        <tr>
+                            <td><label>TC Kimlik No:</label></td>
+                            <td><input type="text" name="tc"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Şifre:</label></td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Doğum Tarihi:</label></td>
+                            <td><input type="date" name="borndate"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Giriş Yap"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
+    </div>
+    <div id="r_navbar">
+        <ul>
+            <li>Şifre Sıfırlama</li>
+            <li>Hakkında</li>
+        </ul>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../client/index.js"></script>
