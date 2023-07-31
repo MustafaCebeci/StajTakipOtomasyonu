@@ -41,27 +41,27 @@
         </div>
         <div id="login_form">
             <div class="form f_active" id="firma">
-                <form action="/anasayfa/firma" method="post">
+                <form action="/anasayfa/firma" method="post" id="firma">
                     <table>
                         <tr>
                             <td><label>Ad:</label></td>
-                            <td><input type="text" name="name"></td>
+                            <td><input type="text" name="name" required></td>
                         </tr>
                         <tr>
                             <td><label>Soyad:</label></td>
-                            <td><input type="text" name="surname"></td>
+                            <td><input type="text" name="surname" required></td>
                         </tr>
                         <tr>
                             <td><label>TC Kimlik No:</label></td>
-                            <td><input type="text" name="tc"></td>
+                            <td><input type="text" name="tc" required min="11" max="11"></td>
                         </tr>
                         <tr>
                             <td><label>Şifre:</label></td>
-                            <td><input type="password" name="password"></td>
+                            <td><input type="password" name="password" required></td>
                         </tr>
                         <tr>
                             <td><label>Mail:</label></td>
-                            <td><input type="email" name="mail"></td>
+                            <td><input type="email" name="mail" required></td>
                         </tr>
                         <tr>
                             <td><input type="submit" value="Giriş Yap"></td>
@@ -70,7 +70,7 @@
                 </form>
             </div>
             <div class="form" id="ogretmen">
-                <form action="/anasayfa/okul" method="post">
+                <form id="okul">
                     <table>
                         <tr>
                             <td><label>Ad:</label></td>
@@ -95,7 +95,7 @@
                 </form>
             </div>
             <div class="form" id="ogrenci">
-                <form action="/anasayfa/ogrenci" method="post">
+                <form id="ogrenci">
                     <table>
                         <tr>
                             <td><label>Ad:</label></td>
@@ -132,6 +132,7 @@
         </ul>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="../client/index.js"></script>
+    <script src="../client/carousel.js"></script>
+    <script src="../client/form.js"></script>
 </body>
 </html>
