@@ -177,7 +177,7 @@ input[type=submit]:hover {
 label{
     font-size: 1.4rem;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 915px) {
     #container{
         flex-direction: column;
     }
